@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ $# -lt 1 ] ; then
+    echo "gen_private_key <lenght of key>"
+    exit -1
+fi
+openssl genrsa -out private.pem $1
