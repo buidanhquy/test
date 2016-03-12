@@ -1,0 +1,46 @@
+BEGIN response
+ENCRYPTED OFF
+
+REQUEST list_acc 100 {
+    PARAM err int
+    PARAM data char [512]
+    PARAM status char [50]
+}
+
+REQUEST list_online_acc 101 {
+    PARAM err int
+    PARAM data char [512]
+    PARAM status char [50]
+}
+
+REQUEST list_per 102 {
+    PARAM err int
+    PARAM data char [512]
+    PARAM status char [50]
+}
+
+REQUEST add_acc 103 {
+    PARAM err int
+    PARAM data char [512]
+    PARAM status char [50]
+}
+
+REQUEST remove_acc 104 {
+    PARAM err int
+    PARAM data char [512]
+    PARAM status char [50]
+}
+
+REQUEST add_per 105 {
+    PARAM err int
+    PARAM data char [512]
+    PARAM status char [50]
+}
+
+REQUEST remove_per 106 {
+    PARAM err int
+    PARAM data char [512]
+    PARAM status char [50]
+}
+
+END

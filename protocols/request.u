@@ -1,0 +1,38 @@
+BEGIN tcp
+ENCRYPTED OFF
+
+REQUEST list_acc 100 {
+    PARAM acc char [50]
+    PARAM pwd char [50]
+}
+
+REQUEST list_online_acc 101 {
+    PARAM o_acc_id char [50]
+    PARAM o_node_id char [50]
+}
+
+REQUEST list_per 102 {
+    PARAM p_acc_id char [50]
+    PARAM p_node_id char [50]
+}
+
+REQUEST add_acc 103 {
+    PARAM a_acc char [50]
+    PARAM a_pwd char [50]
+}
+
+REQUEST remove_acc 104 {
+    PARAM r_acc char [50]
+}
+
+REQUEST add_per 105 {
+    PARAM a_acc_id char [50]
+    PARAM a_node_id char [50]
+}
+
+REQUEST remove_per 106 {
+    PARAM r_acc_id char [50]
+    PARAM r_node_id char [50]
+}
+
+END
